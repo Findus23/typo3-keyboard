@@ -1,0 +1,1 @@
+../mousetrap/plugins/record/mousetrap-record.js

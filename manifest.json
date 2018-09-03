@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Typo3 Keyboard Control",
+  "short_name": "Typo3 Keyboard Control",
+  "version": "1.0.0",
+  "description": "...",
+  "permissions": [
+    "storage"
+  ],
+  "options_ui": {
+    "page": "options.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/typo3/*"
+      ],
+      "all_frames": true,
+      "js": [
+        "libs/mousetrap.js",
+        "contentscript.js"
+      ]
+    }
+  ],
+  "applications": {
+    "gecko": {
+      "id": "addon@example.com"
+    }
+  }
+}
