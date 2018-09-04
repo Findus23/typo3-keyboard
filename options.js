@@ -16,8 +16,8 @@ const keys = {
 function saveOptions(e) {
     e.preventDefault();
 
-    Object.entries(keys).forEach(([key, value]) => {
-        let obj = {};
+    Object.entries(keys).forEach(([key]) => {
+        const obj = {};
         obj[key] = document.getElementById(key).value;
         chrome.storage.sync.set(obj);
     });
@@ -30,7 +30,7 @@ function restoreOptions() {
     Object.entries(keys).forEach(([key, value]) => {
         chrome.storage.sync.get(key, function (result) {
             console.info(result);
-            document.getElementById(key).value = result[key] || value
+            document.getElementById(key).value = result[key] || value;
         });
     });
 }

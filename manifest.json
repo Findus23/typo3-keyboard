@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Typo3 Keyboard Control",
-  "short_name": "Typo3 Keyboard Control",
-  "version": "1.0.0",
+  "name": "TYPO3 Keyboard Control",
+  "short_name": "TYPO3 Keyboard Control",
+  "version": "1.0.1",
   "description": "...",
   "permissions": [
     "storage"
@@ -21,10 +21,5 @@
         "contentscript.js"
       ]
     }
-  ],
-  "applications": {
-    "gecko": {
-      "id": "addon@example.com"
-    }
-  }
+  ]
 }
