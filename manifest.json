@@ -3,7 +3,7 @@
   "name": "TYPO3 Keyboard Control",
   "short_name": "TYPO3 Keyboard Control",
   "version": "1.0.1",
-  "description": "...",
+  "description": "Produktives Arbeiten in TYPO3 mithilfe von Keyboard Shortcuts",
   "permissions": [
     "storage"
   ],
@@ -21,5 +21,11 @@
         "contentscript.js"
       ]
     }
-  ]
+  ],
+  "applications": {
+    "gecko": {
+      "id": "{9a7acde7-4af3-47d9-8061-c60811b351f2}",
+      "strict_min_version": "42.0"
+    }
+  }
 }

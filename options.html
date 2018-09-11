@@ -6,12 +6,17 @@
 </head>
 <style>
     form div {
-        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 800px;
+margin-bottom: 10px;
     }
 </style>
 <body>
 
 <form>
+    <h1>Keyboard Shortcuts</h1>
     <div>
         <label for="close">Schließen</label>
         <input id="close" type="text">
@@ -37,7 +42,7 @@
         <input id="delete" type="text">
     </div>
     <div>
-        <label for="edit">Bearbeiten</label>
+        <label for="edit">Seite bearbeiten</label>
         <input id="edit" type="text">
     </div>
     <div>
@@ -57,7 +62,7 @@
         <input id="searchField" type="text">
     </div>
     <button type="submit">Speichern</button>
-    <div style="display: none" id="saved">Saved</div>
+    <div style="visibility:hidden" id="saved">✓ gespeichert</div>
 </form>
 
 

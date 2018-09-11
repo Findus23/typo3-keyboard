@@ -22,18 +22,18 @@ function saveOptions(e) {
         chrome.storage.sync.set(obj);
     });
 
-    document.getElementById("saved").style.display = "block";
+    document.getElementById('saved').style.visibility = 'visible';
 }
 
 function restoreOptions() {
 
-    Object.entries(keys).forEach(([key, value]) => {
+    Object.entries(keys).forEach(([key, defaultKey]) => {
         chrome.storage.sync.get(key, function (result) {
             console.info(result);
-            document.getElementById(key).value = result[key] || value;
+            document.getElementById(key).value = result[key] || defaultKey;
         });
     });
 }
 
-document.addEventListener("DOMContentLoaded", restoreOptions);
-document.querySelector("form").addEventListener("submit", saveOptions);
+document.addEventListener('DOMContentLoaded', restoreOptions);
+document.querySelector('form').addEventListener('submit', saveOptions);
