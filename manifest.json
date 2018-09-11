@@ -7,6 +7,11 @@
   "permissions": [
     "storage"
   ],
+  "icons": {
+    "128": "icon/icon-128x128.png",
+    "256": "icon/icon-256x256.png",
+    "512": "icon/icon-512x512.png"
+  },
   "options_ui": {
     "page": "options.html"
   },
