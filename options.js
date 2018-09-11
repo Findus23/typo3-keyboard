@@ -9,7 +9,9 @@ const keys = {
     viewPage: 'v',
     flushFrontendCaches: 'mod+del',
     flushAllCaches: 'mod+shift+del',
-    searchField: 'mod+shift+f'
+    searchField: 'mod+shift+f',
+    expand: 'mod+shift+plus',
+    collapse: 'mod+shift+-'
 };
 
 

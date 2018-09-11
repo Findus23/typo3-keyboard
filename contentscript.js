@@ -18,7 +18,9 @@ const defaultkeys = {
     viewPage: 'v',
     flushFrontendCaches: 'mod+del',
     flushAllCaches: 'mod+shift+del',
-    searchField: 'mod+shift+f'
+    searchField: 'mod+shift+f',
+    expand: 'mod+shift+plus',
+    collapse: 'mod+shift+-'
 };
 
 
@@ -84,6 +86,35 @@ chrome.storage.sync.get(defaultkeys, function (keys) {
     Mousetrap.bind(keys.searchField, function () {
         const searchField = parentDocument.getElementById("live-search-box");
         searchField.focus();
+        return false;
+    });
+    Mousetrap.bind("a", function () {
+        console.log("expand");
+        const contentDocument = getContentDocument();
+        const closed = contentDocument.querySelectorAll('.panel-collapsed');
+        closed.forEach((el) => {
+            const header = el.querySelector(".panel-heading");
+            console.log(header.dataset);
+            delete header.dataset.expandsingle;
+        });
+        closed.forEach((el) => {
+            // if (el.offsetParent === null) {
+            //     return false;
+            // }
+            const header = el.querySelector(".panel-heading");
+            delete header.dataset.expandsingle;
+            header.click();
+        });
+        return false;
+    });
+    Mousetrap.bind("b", function () {
+        console.log("close");
+        const contentDocument = getContentDocument();
+        const opened = contentDocument.querySelectorAll('.panel-visible');
+        opened.forEach((el) => {
+            console.info(el);
+            el.querySelector(".panel-heading").click();
+        });
         return false;
     });
 
