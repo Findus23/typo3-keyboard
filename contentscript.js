@@ -1,7 +1,7 @@
 /* global Mousetrap */
 
 function getContentDocument() {
-    const iframe = document.getElementById("typo3-contentIframe");
+    const iframe = document.getElementById('typo3-contentIframe');
     return iframe ? iframe.contentDocument : document;
 }
 
@@ -72,17 +72,17 @@ chrome.storage.sync.get(defaultkeys, function (keys) {
         return false;
     });
     Mousetrap.bind(keys.flushFrontendCaches, function () {
-        const flushFrontendCachesButton = parentDocument.querySelector('.icon-actions-system-cache-clear-impact-low').closest("a");
+        const flushFrontendCachesButton = parentDocument.querySelector('.icon-actions-system-cache-clear-impact-low').closest('a');
         flushFrontendCachesButton.click();
         return false;
     });
     Mousetrap.bind(keys.flushAllCaches, function () {
-        const flushAllCachesButton = parentDocument.querySelector('.icon-actions-system-cache-clear-impact-high').closest("a");
+        const flushAllCachesButton = parentDocument.querySelector('.icon-actions-system-cache-clear-impact-high').closest('a');
         flushAllCachesButton.click();
         return false;
     });
     Mousetrap.bind(keys.searchField, function () {
-        const searchField = parentDocument.getElementById("live-search-box");
+        const searchField = parentDocument.getElementById('live-search-box');
         searchField.focus();
         return false;
     });
