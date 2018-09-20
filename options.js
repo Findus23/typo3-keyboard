@@ -35,5 +35,13 @@ function restoreOptions() {
     });
 }
 
+const translatableIDs = ["close-label", "save-label", "saveAndClose-label", "saveAndViewPage-label", "saveAndCreateNewOne-label", "delete-label", "edit-label", "viewPage-label", "flushFrontendCaches-label", "flushAllCaches-label", "searchField-label", "save-button", "saved"];
+translatableIDs.forEach(function (id) {
+    const translateKey = id.replace(/-/g, "_");
+    console.info(translateKey);
+    console.log(document.getElementById(translateKey));
+    document.getElementById(id).innerText = chrome.i18n.getMessage(translateKey);
+});
+
 document.addEventListener('DOMContentLoaded', restoreOptions);
 document.querySelector('form').addEventListener('submit', saveOptions);

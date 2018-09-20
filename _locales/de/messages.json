@@ -1,0 +1,58 @@
+{
+  "extension_description": {
+    "message": "Produktives Arbeiten in TYPO3 mithilfe von Keyboard Shortcuts",
+    "description": "description of the extension"
+  },
+  "close_label": {
+    "message": "Schließen",
+    "description": ""
+  },
+  "save_label": {
+    "message": "Speichern",
+    "description": ""
+  },
+  "saveAndClose_label": {
+    "message": "Speichern und Schließen",
+    "description": ""
+  },
+  "saveAndViewPage_label": {
+    "message": "Speichern und Seite anzeigen",
+    "description": ""
+  },
+  "saveAndCreateNewOne_label": {
+    "message": "Speichern und neues erstellen",
+    "description": ""
+  },
+  "delete_label": {
+    "message": "Löschen",
+    "description": ""
+  },
+  "edit_label": {
+    "message": "Seite bearbeiten",
+    "description": ""
+  },
+  "viewPage_label": {
+    "message": "Seite anzeigen",
+    "description": ""
+  },
+  "flushFrontendCaches_label": {
+    "message": "Frontend Cache leeren",
+    "description": ""
+  },
+  "flushAllCaches_label": {
+    "message": "Backend Cache leeren",
+    "description": ""
+  },
+  "searchField_label": {
+    "message": "Suche fokusieren",
+    "description": ""
+  },
+  "save_button": {
+    "message": "Speichern",
+    "description": ""
+  },
+  "saved": {
+    "message": "✓ gespeichert",
+    "description": ""
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "extension_description": {
+    "message": "use TYPO3 productively by using keyboard shortcuts",
+    "description": "description of the extension"
+  },
+  "close_label": {
+    "message": "Close",
+    "description": ""
+  },
+  "save_label": {
+    "message": "Save",
+    "description": ""
+  },
+  "saveAndClose_label": {
+    "message": "Save and Close",
+    "description": ""
+  },
+  "saveAndViewPage_label": {
+    "message": "Save and View",
+    "description": ""
+  },
+  "saveAndCreateNewOne_label": {
+    "message": "Save and create new",
+    "description": ""
+  },
+  "delete_label": {
+    "message": "Delete",
+    "description": ""
+  },
+  "edit_label": {
+    "message": "Edit page properties",
+    "description": ""
+  },
+  "viewPage_label": {
+    "message": "View webpage",
+    "description": ""
+  },
+  "flushFrontendCaches_label": {
+    "message": "Flush frontend caches",
+    "description": ""
+  },
+  "flushAllCaches_label": {
+    "message": "Flush all caches",
+    "description": ""
+  },
+  "searchField_label": {
+    "message": "focus seach",
+    "description": ""
+  },
+  "save_button": {
+    "message": "Save",
+    "description": ""
+  },
+  "saved": {
+    "message": "✓ saved",
+    "description": ""
+  }
+}

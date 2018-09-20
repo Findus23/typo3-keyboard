@@ -2,8 +2,8 @@
   "manifest_version": 2,
   "name": "TYPO3 Keyboard Control",
   "short_name": "TYPO3 Keyboard Control",
-  "version": "1.0.2",
-  "description": "Produktives Arbeiten in TYPO3 mithilfe von Keyboard Shortcuts",
+  "version": "1.0.3",
+  "description": "__MSG_extension_description__",
   "permissions": [
     "storage"
   ],
@@ -27,6 +27,7 @@
       ]
     }
   ],
+  "default_locale": "en",
   "applications": {
     "gecko": {
       "id": "{9a7acde7-4af3-47d9-8061-c60811b351f2}",
